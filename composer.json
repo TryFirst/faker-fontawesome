@@ -1,0 +1,31 @@
+{
+    "name": "ioroot/fontawesome-generator",
+    "description": "Faker extension for randomly picking a FontAwesome Icon",
+    "license": "MIT",
+    "type": "project",
+    "keywords": ["icon-generator", "FontAwesome", "faker" ],
+    "authors": [
+        {
+            "name": "Andy Pearson",
+            "email": "andy@parkourgenerations.com"
+        }
+    ],
+    "require": {
+        "FortAwesome/Font-Awesome": "*",
+        "fzaninotto/faker": "^1.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "faker\\provider\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "faker\\provider\\Test\\": "tests/"
+        }
+    }
+
+}
