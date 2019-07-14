@@ -16,7 +16,7 @@ $iconList = $faker->fontAwesomeIcons();
     </head>
     <body>
     <h1>Testing faker: <?php echo $faker->name; ?></h1>
-    <h2>Testing faker FontAwesome (4.7.0) function fontAwesomeIcon(): <?php echo $icon; ?></h2>
+    <h2>Testing faker FontAwesome (5.9.0) function fontAwesomeIcon(): <?php echo $icon; ?></h2>
     <div style="padding:50px; margin:20px; border:1px solid #111111;">
         <i style="font-size:200px" class="fa <?php echo $icon; ?>" aria-hidden="true"></i><br/><br/>
         <?php echo $icon; ?>
