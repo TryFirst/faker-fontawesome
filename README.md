@@ -1,23 +1,23 @@
 # Faker-FontAwesome
-Faker extension for randomly picking a FontAwesome (4.7.0) icon.
+Faker extension for randomly picking a FontAwesome (5.9.0) icon.
 
 # Faker Extension
 An extension of the [fzaninotto/Faker](https://github.com/fzaninotto/Faker) PHP Library. 
 This has two functions that will either return a random icon name or the entire array of names.
 
-The library contains all of [FontAwesome's Library](http://fontawesome.io/icons/).
+The library contains all of [FontAwesome's Library](https://fontawesome.com/cheatsheet).
 
 ## Installation
 
 ```sh
-composer require ioroot/fontawesomegenerator
+composer require tryfirst/fontawe-somegenerator
 ```
 
 Alternatively, add to your composer.json file with:
 
 ```sh
 "require": {
-        "ioroot/fontawesomegenerator": "v0.0.1"
+        "tryfirst/fontawe-somegenerator": "v0.0.1"
     }
 ```
 
