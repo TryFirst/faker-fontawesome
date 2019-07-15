@@ -6,26 +6,53 @@ use faker\provider\FontAwesomeGeneratorProvider;
 
 $faker = Faker\Factory::create();
 $faker->addProvider(new FontAwesomeGeneratorProvider($faker));
-$icon = $faker->fontAwesomeIcon();
-$iconList = $faker->fontAwesomeIcons();
+$icon_all = $faker->fontAwesomeIcon();
+$icon_solid = $faker->fontAwesomeIcon('solid');
+$icon_regular = $faker->fontAwesomeIcon('regular');
+$icon_brands = $faker->fontAwesomeIcon('brands');
+$style = 'all';
+$iconList = $faker->fontAwesomeIcons($style);
 ?>
 
 <html>
     <head>
-        <link rel="stylesheet" href="vendor/fortawesome/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     </head>
     <body>
-    <h1>Testing faker: <?php echo $faker->name; ?></h1>
-    <h2>Testing faker FontAwesome (5.9.0) function fontAwesomeIcon(): <?php echo $icon; ?></h2>
-    <div style="padding:50px; margin:20px; border:1px solid #111111;">
-        <i style="font-size:200px" class="fa <?php echo $icon; ?>" aria-hidden="true"></i><br/><br/>
-        <?php echo $icon; ?>
+    <h1>Testing faker</h1>
+    <p><?php echo $faker->name; ?></p>
+    <h2>Testing faker/font-awesome (5.9.0 / 2019-07-14)</h2>
+
+    <h3>fontAwesomeIcon(string $style = 'all'):</h3>
+    <div class="container" style="display: flex; flex-direction: row">
+
+        <div style="padding:1em; margin:1em; border:1px solid #aaa;">
+            <p>style 'all'</p>
+            <i style="font-size:12em" class="<?php echo $icon_all; ?>" aria-hidden="true"></i><br/><br/>
+            <?php echo $icon_all; ?>
+        </div>
+        <div style="padding:1em; margin:1em; border:1px solid #aaa;">
+            <p>style 'regular'</p>
+            <i style="font-size:12em" class="<?php echo $icon_regular; ?>" aria-hidden="true"></i><br/><br/>
+            <?php echo $icon_regular; ?>
+        </div>
+        <div style="padding:1em; margin:1em; border:1px solid #aaa;">
+            <p>style 'solid'</p>
+            <i style="font-size:12em" class="<?php echo $icon_solid; ?>" aria-hidden="true"></i><br/><br/>
+            <?php echo $icon_solid; ?>
+        </div>
+        <div style="padding:1em; margin:1em; border:1px solid #aaa;">
+            <p>style 'brands'</p>
+            <i style="font-size:12em" class="<?php echo $icon_brands; ?>" aria-hidden="true"></i><br/><br/>
+            <?php echo $icon_brands; ?>
+        </div>
     </div>
 
-    <h2>Testing faker FontAwesome function fontAwesomeIcons():</h2>
+    <h3>function fontAwesomeIcons(string $style = 'all'):</h3>
     <?php
+        echo '<p>style \''.$style.'\' <em>'. count($iconList).'</em> icons </p>';
         foreach ($iconList as $singleIcon){
-            echo '<i style="font-size:1.2em; padding:5px;" class="fa '. $singleIcon . '" aria-hidden="true"></i>';
+            echo '<i style="font-size:1.2em; padding:5px;" class="'. $singleIcon . '" aria-hidden="true"></i>';
         }
     ?>
 
