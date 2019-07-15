@@ -3,6 +3,7 @@
     "description": "Faker extension for randomly picking a FontAwesome Icon",
     "license": "MIT",
     "type": "project",
+    "version": "v0.0.2",
     "keywords": ["icon-generator", "FontAwesome", "faker" ],
     "authors": [
         {
