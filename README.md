@@ -1,11 +1,12 @@
 # Faker-FontAwesome
 
-Faker extension for randomly picking a FontAwesome (5.9.0) @ 2019-07-14 icons.
+Faker extension for randomly picking a [FontAwesome](https://fontawesome.com/) (5.9.0 / 2019-07-14) icon.
 
 # Faker Extension
 
 An extension of the [fzaninotto/Faker](https://github.com/fzaninotto/Faker) PHP Library.
 This has two functions that will either return a random icon name or the entire array of names.
+This extension was forked from [IORoot/faker-fontawesome](https://github.com/IORoot/faker-fontawesome).
 
 The library contains all of [FontAwesome's Library](https://fontawesome.com/cheatsheet).
 
@@ -19,7 +20,7 @@ Alternatively, add to your composer.json file with:
 
 ```sh
 "require": {
-        "tryfirst/fontawe-somegenerator": "v0.0.1"
+        "tryfirst/fontawe-somegenerator": "v0.0.2"
     }
 ```
 
@@ -44,7 +45,7 @@ This will generate an i tag with a random fontawesome icon.
 
 ## Example index file
 
-Within the `vendor/ioroot/fontawesomegenerator/` folder you will find an `index.php` file which can be moved
+Within the `vendor/tryfirst/fontawesomegenerator/` folder you will find an `index.php` file which can be moved
 to your root directory and will provide an example of both functions.
 
 ![Example inde file](fontawesome_test.png)
