@@ -47,6 +47,9 @@ This will generate an i tag with a random fontawesome icon.
 Within the `vendor/ioroot/fontawesomegenerator/` folder you will find an `index.php` file which can be moved
 to your root directory and will provide an example of both functions.
 
+![Example inde file](fontawesome_test.png)
+*Sample output*
+
 ## Tests
 
 There are two PHPUnit tests that will check that the library will return a correct FontAwesome name value and that it is contained
