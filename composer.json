@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "fortAwesome/font-awesome": "*",
+        "fortawesome/font-awesome": "*",
         "fzaninotto/faker": "^1.4"
     },
     "require-dev": {
