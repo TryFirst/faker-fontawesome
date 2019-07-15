@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Faker Material Design Colours">
+        <testsuite name="Faker FontAwesome icons">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
